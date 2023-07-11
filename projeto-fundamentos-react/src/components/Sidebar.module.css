@@ -1,0 +1,74 @@
+@charset 'UTF-8';
+
+.sidebar{
+    background: var(--gray-800);
+    border-radius: 8px;
+    overflow: hidden; /*Serve para arredondar imagens e só ocupam o espaço que estão no "container" */
+}
+
+.cover{
+    width: 100%;
+    height: 72px;
+    object-fit: cover; /*Mostra o centro da imagem e não faz com que a imagem fique distorcida*/
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top:  calc(0px - 1.5em - 6px); /*Se tivesse apenas 1.5em - 6px não iria dar certo e mesmo se colocasse -calc() iria ficar da mesma forma, por isso colocamos uma unidade zerada antes se o objetivo for colocar a imagem ou qualquer outra coisa posicionado para cima*/
+}
+
+.avatar{
+    /* box-sizing: initial; ou*/
+    width: calc(3rem + 12px);
+    height: calc(3rem + 12px);
+    border-radius: 8px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--green-500);
+}
+
+.profile strong{
+    margin-top: 1rem;
+    color: var(-gray-100);
+    line-height: 1.6;
+}
+
+.profile span{
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    line-height: 1.6;
+}
+
+.sidebar footer{
+    border-top: 1px solid var(--gray-600);
+    margin-top: 1.25rem;
+    padding: 1.5rem 2rem 2rem;
+} 
+
+.sidebar footer a{
+    width: 100%;
+    background:transparent;
+    color: var(--green-500);
+    border: 1px solid var(--green-500);
+    border-radius: 8px;
+    height: 50px;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    transition: color 0.1s, background-color 0.1s;
+}
+
+.sidebar footer a:hover {
+    background: var(--green-500);
+    color: var(--white);
+}

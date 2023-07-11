@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+.wrapper{
+    height: 100%;
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    gap: 2rem;
+    align-items: flex-start; /*Faz com que os componentes fiquem sempre alinhados para o topo se não eles ficam com o mesmo tamanho*/
+}
