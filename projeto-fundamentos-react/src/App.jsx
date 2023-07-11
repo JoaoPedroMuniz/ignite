@@ -1,11 +1,12 @@
 // JSX = JavaScript + XML(HTML)
-import{ Post } from './Post';
+import{ Post } from './components/Post';
 import { Header } from './components/Header';
+import { Sidebar } from './components/sidebar';
 
 import styles from './App.module.css'
 
 import './global.css';
-import { Sidebar } from './components/sidebar';
+
 
 
 function App(props) {
@@ -15,14 +16,8 @@ function App(props) {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post 
-            author='João Pedro' 
-            content='Meu primeiro content na linguagem react.'
-          />
-          <Post 
-            author="Gabriel Jesus" 
-            content="Ruim de bola, mas serviu de exemplo."
-          />
+          <Post />
+          <Post />
         </main>
       </div>
     </div>
