@@ -14,6 +14,11 @@
 
 }
 
+:focus{ /*Em relação a cantos de formúlarios que normalmente são brancos, depende do seu navegador, nesse caso quando o usuário for digitar no formulário a borda fica verde.*/
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--green-500);
+}
+
 *{
     margin: 0px;
     padding: 0px;
