@@ -15,16 +15,16 @@ const posts = [
   {
     id:1,
     author: {
-      avatarUrl: 'https://github.com/JoaoPedroSantosMuniz',
+      avatarUrl: 'https://github.com/JoaoPedroMuniz.png',
       name: 'João Pedro Muniz',
-      role: 'Estudante de TI'
+      role: 'Estudante de TI',
     },
     content: [
       { type:'paragraph', content:'Fala galeraa 👋'},
       { type:'paragraph', content:'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'},
       {type:'link', content:'jane.design/doctorcare'},
     ],
-    publishedAt: new Date('2023-07-10 11:20:02')
+    publishedAt: new Date('2023-07-10 11:20:02'),
   },
   {
     id:2,
@@ -38,7 +38,7 @@ const posts = [
       { type:'paragraph', content:'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'},
       {type:'link', content:'jane.design/doctorcare'},
     ],
-    publishedAt: new Date('2023-07-11 15:40:32')
+    publishedAt: new Date('2023-07-11 15:40:32'),
   },
 ];
 
